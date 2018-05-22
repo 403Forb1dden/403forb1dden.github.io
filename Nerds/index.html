@@ -94,7 +94,8 @@
   </section>
   </main>
   <footer class="main-footer">
-      <img src="nerds-on-map" alt="nerds-on-map">
+      <img src="img/map.jpg" alt="Санкт-Петербург,
+              ул. Б. Конюшенная, д. 19/8">
       <p class="footer-contacts">
           <b>NЁRDS DESIGN STUDIO</b>
           <br><br>
@@ -113,5 +114,24 @@
           <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
   </footer>
+  <section class="modal modal-feedback">
+      <h2>Напишите нам</h2>
+      <form class="modal-feedback-form" method="post" action="http://echo.htmlacademy.ru">
+          <p class="feedback-item">
+              <label for="feedback-name">Ваше имя:</label>
+              <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия"> 
+          </p>
+          <p class="feedback-item">
+              <label for="feedback-email">Ваш e-mail:</label>
+              <input id="feedback-email" type="email" name="email" value="" placeholder="email@example.com">
+          </p>
+          <p class="feedback-item">
+              <label for="feedback-text">Текст письма:</label>
+              <textarea id="feedback-text" type="text" name="textarea" value="" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit" class="button">ОТПРАВИТЬ</button>
+      </form>
+      <button type="button" class="modal-close">Закрыть</button>
+  </section>
   </body>
 </html>
