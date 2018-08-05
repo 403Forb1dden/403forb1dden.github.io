@@ -4,21 +4,24 @@
 <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
-        <nav class="main-navigation>">
+        <nav class="main-navigation">
             <a class="main-header-logo">
      <img src="svg/nerds-logo.svg" alt="Логотип студии Nerds">
      </a>
             <ul class="site-navigation">
                 <li><a href="studio.html">СТУДИЯ</a></li>
                 <li><a href="clients.html">КЛИЕНТЫ</a></li>
-                <li class="site-navigation-current"><a href="catalog.html">МАГАЗИН</a></li>
+                <li class="site-navigation-current underline-shop-width"><a href="catalog.html">МАГАЗИН</a></li>
                 <li><a href="contacts.html">КОНТАКТЫ</a></li>
             </ul>
             <ul class="user-navigation">
-                <li class="cart-link">КОРЗИНА</li>
+                <li class="cart-link"><a href="cart.html">КОРЗИНА</a></li>
             </ul>
         </nav>
         <h1 class="main-header">МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</h1>
@@ -65,7 +68,7 @@
                             <label for="filter-news">Новости</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery" disabled>
                             <label for="filter-gallery">Галерея</label>
                         </li>
                         <li class="filter-option">
@@ -74,12 +77,13 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit" class="filter-button button">ПОКАЗАТЬ</button>
+                <button type="submit" class="gray-button filter-button button">ПОКАЗАТЬ</button>
             </form>
         </section>
         <p class="sort-header">
             СОРТИРОВАТЬ:
         </p>
+        <div class="sort-menu">
         <ul class="sort-items">
             <li class="sort-item-parameter sort-item-parameter-current"><a>ПО ЦЕНЕ</a></li>
             <li class="sort-item-parameter"><a href="#">ПО ТИПУ</a></li>
@@ -93,6 +97,7 @@
                 <a href="#"><img src="svg/icon-up-dir.svg" alt="icon-up"></a>
             </li>
         </ul>
+        </div>
         <section class="catalog">
             <h2 class="visually-hidden">СПИСОК ШАБЛОНОВ САЙТОВ</h2>
             <ul class="catalog-list">
@@ -103,9 +108,11 @@
                     </h3>
                     <p class="catalog-item-intro">Информационный сайт<br> для туристов</p>
                     <p class="catalog-item-image">
-                            <img src="img/product-1.jpg" width="170" height="370" alt="SEDONA">
+                            <img src="img/img-sedona.jpg" width="360" height="576" alt="SEDONA">
                     </p>
-                    <img src="svg/browser.svg" class="browser-hover browser-hover-current" width="170" height="15" alt="browser">
+                    <span class="browser-sedona-top-svg browser-top-svg">
+                    <img src="svg/browser.svg" class="browser-hover browser-hover-current" width="360" height="40" alt="browser">
+                    </span>
                     </a>
                     <p class="catalog-item-price">
                         <a class="button" href="#">9 900 РУБ.</a>
@@ -118,9 +125,10 @@
                     </h3>
                     <p class="catalog-item-intro">Продуктовый лендинг<br> приложения для iOS и Android</p>
                     <p class="catalog-item-image">
-                            <img src="img/product-2.jpg" width="170" height="370" alt="PINK APP">
+                            <img src="img/img-pink.jpg" width="360" height="576" alt="PINK APP">
                     </p>
-                    <img src="svg/browser.svg" class="browser-hover" width="170" height="15" alt="browser">
+                    <span class="browser-pink-top-svg browser-top-svg">
+                    <img src="svg/browser.svg" class="browser-hover browser-hover-current" width="360" height="40" alt="browser">
                     </a>
                     <p class="catalog-item-price">
                         <a class="button" href="#">9 900 РУБ.</a>
@@ -133,9 +141,11 @@
                     </h3>
                     <p class="catalog-item-intro">Сайт салона красоты.<br>Для мужчин.</p>
                     <p class="catalog-item-image">
-                            <img src="img/product-3.jpg" width="170" height="370" alt="BARBERSHOP">
+                            <img src="img/img-barbershop.jpg" width="360" height="576" alt="BARBERSHOP">
                     </p>
-                    <img src="svg/browser.svg" class="browser-hover" width="170" height="15" alt="browser">
+                    <span class="browser-barbershop-top-svg browser-top-svg">
+                    <img src="svg/browser.svg" class="browser-hover browser-hover-current" width="360" height="40" alt="browser">
+                    </span>
                     </a>
                     <p class="catalog-item-price">
                         <a class="button" href="#">9 900 РУБ.</a>
@@ -148,9 +158,11 @@
                     </h3>
                     <p class="catalog-item-intro">Интернет-магазин<br> вязаных игрушек</p>
                     <p class="catalog-item-image">
-                            <img src="img/product-4.jpg" width="170" height="370" alt="MISHKA">
+                            <img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA">
                     </p>
-                    <img src="svg/browser.svg" class="browser-hover" width="170" height="15" alt="browser">
+                    <span class="browser-mishka-top-svg browser-top-svg">
+                    <img src="svg/browser.svg" class="browser-hover browser-hover-current" width="360" height="40" alt="browser">
+                    </span>
                     </a>
                     <p class="catalog-item-price">
                         <a class="button" href="#">9 900 РУБ.</a>
@@ -163,9 +175,11 @@
                     </h3>
                     <p class="catalog-item-intro">Лендинг курсов повышения<br> квалификации</p>
                     <p class="catalog-item-image">
-                            <img src="img/product-5.jpg" width="170" height="370" alt="A PLUS">
+                            <img src="img/img-aplus.jpg" width="360" height="576" alt="A PLUS">
                     </p>
-                    <img src="svg/browser.svg" class="browser-hover" width="170" height="15" alt="browser">
+                    <span class="browser-aplus-top-svg browser-top-svg">
+                    <img src="svg/browser.svg" class="browser-hover browser-hover-current" width="360" height="40" alt="browser">
+                    </span>
                     </a>
                     <p class="catalog-item-price">
                         <a class="button" href="#">9 900 РУБ.</a>
@@ -178,20 +192,22 @@
                     </h3>
                     <p class="catalog-item-intro">Промо-сайт производителя<br> крафтового кваса</p>
                     <p class="catalog-item-image">
-                            <img src="img/product-6.jpg" width="170" height="370" alt="КВАСТ">
+                            <img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ">
                     </p>
-                    <img src="svg/browser.svg" class="browser-hover" width="170" height="15" alt="browser">
+                    <span class="browser-kvast-top-svg browser-top-svg">
+                    <img src="svg/browser.svg" class="browser-hover browser-hover-current" width="360" height="40" alt="browser">
+                    </span>
                     </a>
                     <p class="catalog-item-price">
                         <a class="button" href="#">9 900 РУБ.</a>
                     </p>
                 </li>
             </ul>
-            <ul class="pagitation-list">
-                <li class="pagitation-item pagitation-item-current"><a>1</a></li>
-                <li class="pagitation-item"><a href="#">2</a></li>
-                <li class="pagitation-item"><a href="#">3</a></li>
-                <li class="pagitation-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current"><a>1</a></li>
+                <li class="pagination-item"><a class="gray-button" href="#">2</a></li>
+                <li class="pagination-item"><a class="gray-button" href="#">3</a></li>
+                <li class="pagination-item"><a class="gray-button" href="#">СЛЕДУЮЩАЯ</a></li>
             </ul>
         </section>
     </main>

@@ -52,6 +52,11 @@ color:#a6a6a6;
     width: 62px;
 }
 
+.underline-shop-width {
+    border-bottom: 2px solid #fb565a;
+    width: 75px;
+}
+
 .slider h2 {
     font-size: 55px;
     line-height: 55px;
@@ -89,10 +94,125 @@ color:#a6a6a6;
     box-shadow:0 3px 0 #c13135 inset;
 }
 
+.main-header h1 {
+    height: 55px;
+    line-height: 55px;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+
 .category-items h3 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+}
+
+.filter ul {
+    list-style: none;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.filter-input + label {
+    color: #797c7f;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+    color: #000000;
+}
+
+.filter-input:disabled + label {
+    color: #283136;
+    opacity: 0.3;
+}
+
+.gray-button {
+    color: #000000;
+    background-color: #eeeeee;
+    border: 0px;
+}
+
+.gray-button:hover {
+    color: #000000;
+    background-color: #dfdfdf;
+}
+
+.gray-button:active,
+.gray-button:focus {
+    color: #a9a9a9;
+    background-color: #d5d5d5;
+    box-shadow:0 3px 0 #bfbfbf inset;
+}
+
+.sort-header {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.sort-menu ul{
+    list-style: none;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.sort-menu a {
+    color:#000000;
+    opacity: 0.3;
+}
+
+.sort-menu a:hover,
+.sort-menu a:focus{
+    color:#000000;
+    opacity: 0.6;
+}
+
+.sort-menu a:active {
+    color:#000000;
+    opacity: 1;
+}
+
+.sort-item-parameter-current a{
+    color:#000000;
+    opacity: 1;
+}
+
+.browser-top-svg {
+    opacity: 0.12;
+    position: relative;
+    top: -639px;
+}
+
+.browser-top-svg:hover {
+    opacity: 1;
+}
+
+.catalog-list li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-list li{
+    list-style: none;
+    font-size: 16px;
+    line-height: 18px
+}
+
+.pagination-item-current a{
+    color: #000000;
+    border: 3px solid #dbdbdb;
+}
+
+.catalog ul {
+    list-style: none;
 }
 
 .category-items p {
@@ -241,4 +361,5 @@ color:#a6a6a6;
     font-weight: 400;
     padding: 10px;
 }
+
 
