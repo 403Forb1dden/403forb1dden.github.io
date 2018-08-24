@@ -1,3 +1,7 @@
+html, body {
+    min-width: 1122px;
+    min-height: 1750px;
+}
 body {
     margin: 0;
     padding: 0;
@@ -13,6 +17,7 @@ body {
     background-image: url("../img/bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
+    
 }
 
 body.inner-page {
@@ -47,16 +52,59 @@ a {
 }
 
 .main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
     
+    background-color: transparent;
+}
+
+.inner-page .main-navigation {
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.main-navigation-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+    
     background-color: #000000;
 }
 
-.site-navigation,
-.user-navigation {
+.main-navigation-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation {
+    width: 620px;
+    
     list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.user-navigation {
+    width: 140px;
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.inner-page .user-navigation {
+    margin-left: auto;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .site-navigation a,
@@ -71,11 +119,23 @@ a {
     background-color: #242424;
 }
 
+.features {
+    margin-bottom: 80px;
+}
+
 .features-list {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 0;
+    padding: 0;
+    
     list-style: none;
 }
 
 .feature-item {
+    width: 300px;
+    
     text-align: center;
 }
 
@@ -85,6 +145,10 @@ a {
 }
 
 .index-columns {
+    padding: 50px 80px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
     color: #000000;
     
     background-color: #f8f5f2;
@@ -98,9 +162,51 @@ a {
     line-height: 42px;
 }
 
+.news {
+    width: 380px;
+}
+
+.gallery {
+    width: 300px;
+}
+
+.contacts {
+    width: 380px;
+}
+
+.appointment {
+    width: 300px;
+}
+
+.page-title {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
 .news-list, .filter-option, .pagination-item{
     list-style: none;
 }
+
+.breadcrumbs {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters {
+    width: 180px;
+}
+
+.catalog {
+    width: 700px;
+}
+
 
 .news-item time {
     text-transform: none; 
@@ -168,12 +274,26 @@ a {
 }
 
 .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    
     list-style: none;
 }
 
 .catalog-item {
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
     background-color: #f8f8f8;
     box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -208,7 +328,18 @@ a {
 }
 
 .pagination-list {
+    padding: 0;
+    margin: 0;
+    
     list-style: none;
+}
+
+.product-photos {
+    width: 460px;
+}
+
+.product-info {
+    width: 390px;
 }
 
 .pagination-item a {
@@ -274,10 +405,20 @@ a {
 .main-footer {
     color: #ffffff;
     
+    margin-top: 65px;
+    padding: 60px 0;
+    
     background-color: #212121;
     background-image: url("../img/pattern-dark.jpg");
     background-repeat: repeat;
     background-position: 0 0;
+}
+
+.inner-page .main-footer {
+    margin-top: 45px;
+}
+.main-footer .container {
+    display: flex;
 }
 
 .footer-contacts a {
@@ -289,8 +430,15 @@ a {
     text-decoration: none;
 }
 
+.footer-contacts {
+    margin: 0;
+    width: 320px;
+    margin-right: 80px;
+}
+
 .footer-social {
     text-align: center;
+    width: 145px;
 }
 
 .footer-social ul {
@@ -302,6 +450,9 @@ a {
 }
 
 .footer-copyright {
+    margin: 0;
+    margin-left: auto;
+    width: 150px;
     text-align: center;
 }
 
@@ -355,3 +506,31 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+    disp lay: none;
+}
+.main-header {
+    margin-bottom: 75px;
+    
+} 
+
+.main-header-logo {
+    width: 368px;
+    height: 153px;
+    
+    order: 2;
+}
+
+.inner-page .main-header {
+    margin-bottom: 50px;
+    
+    background-color: #000000;
+}
+
+.inner-page .main-header-logo {
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px;
+    
+    order: 0;
+}
