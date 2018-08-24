@@ -8,9 +8,9 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner-page">
     <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation container">
             <a class="main-header-logo">
      <img src="svg/nerds-logo.svg" alt="Логотип студии Nerds">
      </a>
@@ -24,7 +24,7 @@
                 <li class="cart-link"><a href="cart.html">КОРЗИНА</a></li>
             </ul>
         </nav>
-        <h1 class="main-header">МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</h1>
+        <h1 class="container">МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</h1>
     </header>
     <main class="container">
         <section class="filters">
@@ -80,9 +80,13 @@
                 <button type="submit" class="gray-button filter-button button">ПОКАЗАТЬ</button>
             </form>
         </section>
-        <p class="sort-header">
+        <section class="main-right">
+        <section class="sort-section">
+        <div>
+        <span class="sort-header">
             СОРТИРОВАТЬ:
-        </p>
+        </span>
+        </div>
         <div class="sort-menu">
         <ul class="sort-items">
             <li class="sort-item-parameter sort-item-parameter-current"><a>ПО ЦЕНЕ</a></li>
@@ -98,6 +102,7 @@
             </li>
         </ul>
         </div>
+        </section>
         <section class="catalog">
             <h2 class="visually-hidden">СПИСОК ШАБЛОНОВ САЙТОВ</h2>
             <ul class="catalog-list">
@@ -127,7 +132,7 @@
                     <p class="catalog-item-image">
                             <img src="img/img-pink.jpg" width="360" height="576" alt="PINK APP">
                     </p>
-                    <span class="browser-pink-top-svg browser-top-svg">
+                       <span class="browser-pink-top-svg browser-top-svg"></span>
                     <img src="svg/browser.svg" class="browser-hover browser-hover-current" width="360" height="40" alt="browser">
                     </a>
                     <p class="catalog-item-price">
@@ -203,6 +208,7 @@
                     </p>
                 </li>
             </ul>
+            </section>
             <ul class="pagination-list">
                 <li class="pagination-item pagination-item-current"><a>1</a></li>
                 <li class="pagination-item"><a class="gray-button" href="#">2</a></li>
@@ -210,25 +216,35 @@
                 <li class="pagination-item"><a class="gray-button" href="#">СЛЕДУЮЩАЯ</a></li>
             </ul>
         </section>
-    </main>
+            </main>
+            
     <footer class="main-footer">
-        <img src="img/map.jpg" alt="Санкт-Петербург,
+     <div class="footer-map-contacts">
+      <img src="img/map.jpg" alt="Санкт-Петербург,
               ул. Б. Конюшенная, д. 19/8">
-        <p class="footer-contacts">
-            <b>NЁRDS DESIGN STUDIO</b>
-            <br><br> 191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8<br><br> тел. +7 (812) 275-75-75
-            <a href="contact-us.html" class="button button-contact-us">НАПИШИТЕ НАМ</a>
-        </p>
-        <div class="footer-social">
-            <ul>
-                <li><a class="social-button" href="#">ВКОНТАКТЕ</a></li>
-                <li><a class="social-button" href="#">ФЕЙСБУК</a></li>
-                <li><a class="social-button" href="#">ИНСТАГРАМ</a></li>
-            </ul>
-            <h3>ДАВАЙТЕ ДРУЖИТЬ, ЭТО ВЫГОДНО!</h3>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-    </footer>
+      <p class="footer-contacts container">
+          <b>NЁRDS DESIGN STUDIO</b>
+          <br><br>
+              191186, Санкт-Петербург, <br>
+              ул. Б. Конюшенная, д. 19/8<br><br>
+              тел. +7 (812) 275-75-75
+          <a href="contact-us.html" class="button button-contact-us">НАПИШИТЕ НАМ</a>
+      </p>
+      </div>
+      <div class="footer-social container">
+         <div class="footer-social-left">
+          <ul>
+              <li><a class="social-button" href="#">ВКОНТАКТЕ</a></li>
+              <li><a class="social-button" href="#">ФЕЙСБУК</a></li>
+              <li><a class="social-button" href="#">ИНСТАГРАМ</a></li>
+          </ul>
+          </div>
+          <div class="footer-social-right">
+          <h3>ДАВАЙТЕ ДРУЖИТЬ, ЭТО ВЫГОДНО!</h3>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+      </div>
+  </footer>
    <section class="modal modal-feedback">
       <h2>Напишите нам</h2>
       <form class="modal-feedback-form" method="post" action="http://echo.htmlacademy.ru">

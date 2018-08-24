@@ -9,7 +9,7 @@
   </head>
   <body>
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
     <a href="index.html">
      <img class="main-header-logo" src="svg/nerds-logo.svg" alt="Логотип студии Nerds" width="166px">
      </a>
@@ -23,12 +23,16 @@
      <li class="cart-link"><a href="cart.html">КОРЗИНА</a></li>
      </ul>
      </nav>
-     <section class="slider">
+     <section class="slider container">
          <div class="slider1">
+            <div class="slider-left">
              <h2>Долго, дорого, скрупулезно.</h2>
              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
              <a href="#" class="button slider-button">УЗНАТЬ БОЛЬШЕ</a>
+            </div>
+            <div class="slider-right"> 
              <img src="img/slide1.png" alt="Изображение смартфона">
+            </div>
          </div>
          <!--Здесь будет 2 и 3 слайдер-->
      </section>
@@ -97,9 +101,10 @@
   </section>
   </main>
   <footer class="main-footer">
+     <div class="footer-map-contacts">
       <img src="img/map.jpg" alt="Санкт-Петербург,
               ул. Б. Конюшенная, д. 19/8">
-      <p class="footer-contacts">
+      <p class="footer-contacts container">
           <b>NЁRDS DESIGN STUDIO</b>
           <br><br>
               191186, Санкт-Петербург, <br>
@@ -107,14 +112,19 @@
               тел. +7 (812) 275-75-75
           <a href="contact-us.html" class="button button-contact-us">НАПИШИТЕ НАМ</a>
       </p>
-      <div class="footer-social">
+      </div>
+      <div class="footer-social container">
+         <div class="footer-social-left">
           <ul>
               <li><a class="social-button" href="#">ВКОНТАКТЕ</a></li>
               <li><a class="social-button" href="#">ФЕЙСБУК</a></li>
               <li><a class="social-button" href="#">ИНСТАГРАМ</a></li>
           </ul>
+          </div>
+          <div class="footer-social-right">
           <h3>ДАВАЙТЕ ДРУЖИТЬ, ЭТО ВЫГОДНО!</h3>
           <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
       </div>
   </footer>
   <section class="modal modal-feedback">
