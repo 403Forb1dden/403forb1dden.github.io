@@ -132,7 +132,7 @@ color:#a6a6a6;
     line-height: 55px;
 }
 
-main.container {
+.inner-page main.container {
     display: flex;
 }
 
