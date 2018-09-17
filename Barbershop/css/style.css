@@ -151,8 +151,8 @@ a {
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus,
-.main-header-logo:hover,
-.main-header-logo:focus {
+.inner-header-logo:hover,
+.inner-header-logo:focus {
     background-color: #242424;
 }
 
