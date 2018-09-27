@@ -828,13 +828,15 @@ color:#a6a6a6;
     padding-right: 28px;
     padding-left: 50px;
     padding-top: 48px;
-    bottom:-1535px;
+    
+    top: 1920px;
+    left: 70px;
     
     background-color: #ffffff;   
 }
 
 .footer-contacts-inner {
-    bottom:-2190px;
+    top: 2575px;
 }
 
 .footer-contacts .contacts-adress {
