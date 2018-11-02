@@ -109,7 +109,7 @@
                    <a href="catalog-item.html">
                     <p class="catalog-item-image">
                            <img src="img/product-2.jpg" width="220" height="165" alt="Увлажняющий кондиционер «BAXTER OF CALIFORNIA»">
-                    </p>
+                       </p>
                     <h3>
                           <span class="catalog-category">Увлажняющий кондиционер<br></span>
                           <span class="catalog-item-title">«BAXTER OF CALIFORNIA»</span>
@@ -216,10 +216,10 @@
             </p>
            </div>
         </footer>
-<!--
-    <section class="modal modal-login">
+        
+        <section class="modal modal-login">
             <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
-            <p>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</p>
+            <p class="modal-description">ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</p>
             <form class="login-form" action="http://echo.htmlacademy.ru" method="post">
                <p>
                <label class="visually-hidden" for="user-login">Логин</label>
@@ -227,19 +227,28 @@
                </p>
                <p>
                   <label class="visually-hidden" for="user-password">Пароль</label>
-                   <input id="user-password" class="login-icon-password" type="password" placeholder="Логин" name="password">
+                   <input id="user-password" class="login-icon-password" type="password" placeholder="Пароль" name="password">
                </p>
-               <p class="login-password-info">
-                  <label class="login-checkbox" for="login-password-info">
-                   <input id="login-password-info" type="checkbox" name="remember" class="visually-hidden">
+               <p class="login-help">
+                  <label class="login-checkbox">
+                   <input type="checkbox" name="remember" class="visually-hidden">
                    <span class="checkbox-indicator"></span>
-                   Запомните меня</label>
+                   Запомните меня
+                   </label>
                    <a class="restore" href="#">Я забыл пароль!</a>
                </p>
                <button class="button" type="submit">Войти</button>
             </form>
             <button type="button" class="modal-close">Закрыть</button>
         </section>
--->
+        <section class="modal modal-map">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <p>
+            <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            </p>
+            <button class="modal-close" type="button">Закрыть</button>
+        </section>
+        <div class="modal-overlay"></div>
+
 </body>
 </html>
