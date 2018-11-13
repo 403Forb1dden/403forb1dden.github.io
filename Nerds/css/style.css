@@ -856,9 +856,14 @@ color:#a6a6a6;
     opacity: 0.1;
 }
 
-.main-footer .contacts-map-image {
+
+.main-footer iframe {
     width: 100%;
-    
+}
+
+.main-footer img {
+    width: 100%;
+    margin-top: -476px;
 }
 
 .footer-contacts {
@@ -873,14 +878,14 @@ color:#a6a6a6;
     padding-left: 50px;
     padding-top: 48px;
     
-    top: 1920px;
+    top: 1955px;
     left: 70px;
     
     background-color: #ffffff;   
 }
 
 .footer-contacts-inner {
-    top: 2575px;
+    top: 2610px;
 }
 
 .footer-contacts .contacts-adress {
@@ -1001,13 +1006,39 @@ color:#a6a6a6;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
-    height: 100%;
+    width: 200%; 
+    height: 200%;
     background: rgba(0,0,0,0.5);
     z-index: 1;
     
     display: none;
 } 
+
+@keyframes bounce {
+    0% { transform: translateY(-2000px) translateX(-50%); }
+    70% { transform: translateY(30px) translateX(-50%);}
+    90% { transform: translateY(-10px) translateX(-50%);}
+    100% { transform: translateY(0) translateX(-50%);}
+}
+
+.modal-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+    
+    transform: translate(-50%, -50%);
+}
+
+@keyframes shake {
+    0%, 100%                { transform: translateX(0) translate(-50%, -50%);}
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px) translate(-50%, -50%); }
+    20%, 40%, 60%, 80%      { transform: translateX(10px) translate(-50%, -50%); }
+}
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
+}
 
 .modal-feedback {
     top: 50%;
