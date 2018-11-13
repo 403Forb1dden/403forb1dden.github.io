@@ -25,7 +25,7 @@
                     <li><a href="contacts.html">КОНТАКТЫ</a></li>
                 </ul>
                 <ul class="user-navigation">
-                    <li><a class="login-link" href="login">ВХОД</a></li>
+                    <li><a class="login-link" href="login.html">ВХОД</a></li>
                 </ul>
                 </div>
               </div>
@@ -87,7 +87,7 @@
                 <p>
                     ВРЕМЯ РАБОТЫ:<br> ПН—ПТ: С 10:00 ДО 22:00<br> СБ—ВС: С 10:00 ДО 19:00
                 </p>
-                <a class="button" href="map.html">КАК ПРОЕХАТЬ</a>
+                <a class="button contacts-button-map" href="map.html">КАК ПРОЕХАТЬ</a>
                 <a class="button" href="contacts.html">ОБРАТНАЯ СВЯЗЬ</a>
             </section>
             <section class="appointment">
@@ -168,12 +168,18 @@
         </section>
         <section class="modal modal-map">
             <h2 class="visually-hidden">Как до нас добраться</h2>
+             
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBFIV8SRsC" width="762" height="560" frameborder="0" allowfullscreen="true"></iframe>
+            
             <p>
-            <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            <img src="img/map.jpg" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
             </p>
-            <button class="modal-close" type="button">Закрыть</button>
+            <button type="button" class="modal-close map-modal-close">Закрыть</button>
         </section>
         <div class="modal-overlay"></div>
-
+        
+        <script src="js/popup.js"></script>
+        <script src="js/mapPopup.js"></script>
+        
     </body>
     </html>
