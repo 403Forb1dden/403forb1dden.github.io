@@ -586,7 +586,7 @@ color:#a6a6a6;
 
 @keyframes catalog-info-appear {
     from {
-        transform: translateY(0.5);
+        transform: translateY(0);
     }
     to {
         transform: translateY(-300px);
@@ -1279,7 +1279,7 @@ color:#a6a6a6;
 
 .modal-feedback-form input[type="text"],
 .modal-feedback-form input[type="email"],
-.modal-feedback-form textarea[type="text"] {
+.modal-feedback-form textarea[name="textarea"] {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
