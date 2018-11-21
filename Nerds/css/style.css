@@ -190,7 +190,7 @@ color:#a6a6a6;
 
 .slider1 {
     display: none;
-    background: url(../img/slide1.png) 430px 18px no-repeat;
+    background: url(../img/slide1.gif) 430px 18px no-repeat;
 }
 .slider1 .slider-left {
     width: 380px;
@@ -200,12 +200,12 @@ color:#a6a6a6;
 
 .slider2 {
     display: none;
-    background: url(../img/slide2.png) 495px 0px no-repeat;
+    background: url(../img/slide2.gif) 495px 0px no-repeat;
 }
 
 .slider3 {
     display: none;
-    background: url(../img/slide3.png) 400px 18px no-repeat;
+    background: url(../img/slide3.gif) 400px 18px no-repeat;
 }
 
 @keyframes slide-on{
