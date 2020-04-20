@@ -1,0 +1,30 @@
+h3 {
+	text-shadow: 4px 4px 4px grey;
+}
+.user {
+	color: #099527;
+	font-weight: bold;
+}
+.floor {
+	border: 4px double blue;
+}
+.choice {
+	border: 3px double black;
+	background-color: yellow;
+}
+.D {
+	color: green;
+	font-weight: bold;
+}
+.opred{
+	color: red;
+	font-weight: normal;
+}
+.opblue {
+	color: blue;
+	font-weight: normal;
+}
+.opblue2 {
+	color: blue;
+	font-weight: bold;
+}

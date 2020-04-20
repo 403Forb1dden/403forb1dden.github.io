@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Страница проекта</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+<style>
+html {
+font-size: 14px;
+}
+#bg {
+    src:'../img/fon.png'
+}
+h1 {
+     font-family: 'proximanovabold';
+     font-style: normal;
+     text-transform:none;
+     font-stretch: normal;
+     font-variant: normal;
+     font-weight: normal;
+     color: white;
+     /*font-size: 68pt;*/
+     /*font-size: 98pt;*/
+     font-size: 7rem;
+}
+h2 {
+     font-family: 'proximanovabold';
+     font-style: normal;
+     text-transform:none;
+     font-stretch: normal;
+     font-variant: normal;
+     font-weight: normal;
+     color: white;
+     font-size: 48pt;
+}
+h3 {
+     font-family: 'proximanovabold';
+     font-style: normal;
+     text-transform:none;
+     font-stretch: normal;
+     font-variant: normal;
+     font-weight: normal;
+     color: white;
+     /*font-size: 28pt;*/
+     font-size: 3rem;
+}
+#main {
+     padding-top: 100px;
+     top: 0px;
+     bottom: 0px;
+     padding-bottom: 50px;
+     min-h eight: 100%;
+}
+
+    .button {
+    display: inline-block;
+    mar gin-left: -15px;
+    margin-right: 16px;
+    margi n-top: 5px;
+    pa dding: 10px 15px;
+    
+    font: inherit;
+    text-align: center;
+    text-decoration: underline;
+    color: #ffffff;
+    vertical-align: middle;
+    text-tr ansform: uppercase;
+    
+    bac kground: rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 3% 3%;
+}
+    .button-about {
+        
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    
+.button:hover,
+.button:focus,
+.button:active {
+        text-decoration: none;
+        back ground: rgba(0,0,0,0.6);
+    color: white;
+    }
+.about-us {
+    font-size: 1.5rem !important; /*
+    15.7pt */
+    bor der: 2px solid white;
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    background: rgba(0,0,0,0.5);
+    box-s hadow: 0 0 20px rgba(0, 0, 0, 1);
+/*    box-shadow: 0 0 20px rgba(231, 178, 102, 0.5);*/
+/*    box-shadow: 0 0 30px 8px rgba(27, 44, 70, 1);*/
+    border-radius: 4%/10%;
+}
+    .about-us:hover {
+       backg round: rgba(0,0,0,0.6); 
+    }
+
+.about-us-left {
+    margin: 0 auto;
+    padding: 0;
+    
+    }
+    
+.about-us-left h3{
+    margin- top: 20px;
+    margin- bottom: 20px;
+    }
+    
+.about-us-right {
+    margin: 0 auto;
+    padding: 0;
+    
+    
+    bor der: 2px solid red;
+    }
+.about-us-right img {
+    
+/*    marg in-right: -15px;*/
+    }
+    
+/*
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+*/
+    
+    .category-items {
+    display: flex;
+        
+    width: 80%;
+    max-width: 80%;    
+    margin: 0 auto;
+    max-width: 1000px;
+    }
+    
+.item-wind{
+    display:inline-block;
+    
+    background-color: rgba(47,70,107, 0.5);
+    color: white;
+    
+    text-align:right;
+    vertical-align: middle;
+    
+    border-radius: 17%/50%;
+    padding: 45px 205px 45px 170px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    
+    font-size: 20px;
+    white-space: nowrap;
+    
+    }
+    .item-wind::before {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        background-image: url("images/ikonka_2.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        color: aqua;
+        background-size: contain;
+      
+        margin-left: -160px;
+        margin-top: -35px;
+        opacity: 0.5;
+    
+    width: 147px;
+    height: 100px;
+    }
+
+.item-wind:hover,
+    .item-wind:focus,
+    .item-wind:active{
+    color: white; 
+    text-decoration: none;
+    background-color: rgba(47,70,107, 0.9);
+
+    transition-duration: 0.3s;
+    } 
+    
+ .item-wind:hover::before,
+    .item-wind:focus::before,
+    .item-wind:active::before {  
+        ani mation-name: rot;
+        anim ation-duration: 1s;
+        pers pective: 600px;
+        tr ansition: transform 1.5s;
+        tra nsform-style: preserve-3d;
+        tran sform: rotateY( -360deg );
+        tra nsform: rotate( -360deg );
+        trans form-origin:20% 20% 0;
+}
+    
+.item-logistic{
+    display:inline-block;
+    background-color: rgba(47,70,107, 0.5);
+    border-radius: 17%/50%;
+    text-align:right;
+    vertical-align: middle;
+
+    padding: 45px 205px 45px 170px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+    color: white;
+    font-size: 20px;
+    white-space: nowrap;
+    
+    }
+    .item-logistic::before {
+        position: absolute;
+        display: block;
+        content: "";
+        background-image: url("images/ikonka_3.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        color: aqua;
+        background-size: contain;
+        
+        margin-left: -160px;
+        margin-top: -35px;
+        opacity: 0.5;
+        transition-duration: 0.3s;
+    
+    width: 147px;
+    height: 100px;
+    }
+
+.item-logistic:hover,
+    .item-logistic:focus,
+    .item-logistic:active{
+    color: white; 
+    text-decoration: none;
+    background-color: rgba(47,70,107, 0.9);
+
+    transition-duration: 0.3s;
+    }  
+    
+    
+.footer {
+    border: 2px solid red;
+    background-color: rgba(47,70,107,0.4);
+    height: 120px;
+    width: 100%;
+    }
+    
+@media (min-width:768px) and (max-width: 2400px) {
+    #main {
+         paddi ng-top: 50px;
+    }
+    h3 {
+        font-size: 20pt;
+    }
+    .button-about {
+        posi tion: relative;
+        
+        padding: 0;
+        margin-bottom: 20px;
+        
+    }
+    .about-us {
+        font-size: 1.2rem !important; /* 15.7pt */
+        bo rder: 1px solid red;
+        mar gin-top: 50px;
+        padding -top:20px;
+        
+        width: 83%;
+        max-width: 1000px;
+    }
+    .about-us-left {
+        max-width: 60%;
+        margi n-right: 5%;
+        padding-top:20px;
+        margin-left: 20px;
+    }
+    .about-us-left h3{
+        padding: 0;
+        margin: 0;
+        margin-top:7%;
+        margin-bottom: 10%;
+        mar gin-left: 10px;
+        
+    mar gin-top: 20px;
+    }
+    .about-us-left p {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 15px;
+        padding-right: 15%;
+        max- width: 90%;
+    }
+    .about-us-right {
+        dis play: inline-block;
+        max-width: 40%;
+        margin-right: -15px;
+        padding-top: 20px;
+        mar gin-bottom: 0;
+        paddi ng-bottom: 0;
+        padd ing-right: -10px;
+        paddi ng-bottom: 20px;
+    margi n-left: -150px;
+        border-radius:0 0 9% 0;
+        overflow: hidden;
+        bor der: 1px solid white;
+        max-w idth: 40%;
+/*
+        background: url(images/header-about-photo.png) no-repeat;
+        background-position: bottom;
+        background-size: 270px 200px;
+*/
+    }
+    .about-us-right img {
+        display: inline-block;
+        positi on: relative;
+        right: 0px;
+        padding-top: 5%;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+        width: 100%;
+        ma rgin: 0;
+        pa dding: 0;
+        mar gin-right: -50px;
+        over flow: hidden;
+/*    margin-right: -15px;*/
+    }
+    .category-items {
+    disp lay: flex;
+    
+        ma rgin: 0 auto;
+        pad ding: 0;
+    justify-content: space-between;
+    ma rgin-top: -150px;
+    flex-direction: row;
+    margin-bottom: 170px;
+    font-size: 20px;
+    justif y-content: space-around;
+        
+    
+    }
+    
+/*
+    .category-items a {
+        font-size: 24px;
+    }
+*/
+    .item-wind {
+        mar gin: auto;
+        wi dth: 30%;
+        
+    }
+    .item-logistic {
+        margin-left: -70px;
+        mar gin: auto;
+        wi dth: 30%;
+        bo rder: 1px solid red;
+    }
+}
+    
+    @media (min-width:1000px) and (max-width:1100px) {
+        .item-logistic {
+        margin-left: -110px;
+        }
+    }
+    
+    @media (min-width:1160px) and (max-width: 2400px) {
+        .button-about {
+            margin-top: 50px;
+        }
+    }
+    
+@media (min-width: 120px) and (max-width: 767.98px) {
+    #main {
+         padding-top: 50px;
+    }
+    .about-us {
+        font-size: 1.5rem !important; /* 15.7pt */
+        flex-wrap: wrap;
+        margin-bottom: 120px;
+        border-radius: 25px/25px;
+    }
+    .about-us-left {
+        margin-bottom: 5%;
+    }
+    
+    .about-us-left h3 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .about-us-right img{
+        width: 220px;
+    }
+
+    .category-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    align-content:space-around;
+    
+    width: 80%;
+    max-width: 80%;
+    margin: -100px auto 0 auto;
+    
+    }
+    .item-wind {
+    width: 100%;
+    margin-left: 10%;
+    
+    margin-bottom: 70px;
+        
+    text-align:right;
+    vertical-align: middle;
+    
+    border-radius: 17%/50%;
+    padding: 30px 170px 30px 105px;
+    max-width: 100%;
+    
+    font-size: 18px;
+    
+    }
+    
+    .item-wind::before {
+        positi on: relative;
+        content: "";
+        background-image: url("images/ikonka_2.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        color: aqua;
+        background-size: contain;
+        position: absolute;
+        margin-left: -105px;
+        margin-top: -30px;
+        opacity: 0.5;
+    
+    width: 90px;
+    height: 100px;
+    }
+    
+    .item-logistic {
+        width: 100%;
+        margin-left: 10%;
+    margin-bottom: 70px;
+        
+    text-align:right;
+    vertical-align: middle;
+    
+    border-radius: 17%/50%;
+    padding: 30px 170px 30px 105px;
+    max-width: 100%;
+    
+    font-size: 18px;
+    }
+    
+    .item-logistic::before {
+        positi on: relative;
+        content: "";
+        background-image: url("images/ikonka_3.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        color: aqua;
+        background-size: contain;
+        position: absolute;
+        margin-left: -105px;
+        margin-top: -30px;
+        opacity: 0.5;
+    
+    width: 90px;
+    height: 100px;
+    }
+
+    h1 {
+        /*font-size: 4.7rem;*/
+        font-size: 4.4rem;
+        line-height: 4.1rem;
+    }
+    h2 {
+        font-size: 38pt;
+        text-align: center;
+    }
+    h3 {
+        font-size: 22pt;
+    }
+    
+    
+    .main-footer .container {
+    font-size: 18px;
+    dis play: flex;
+    justif y-content: space-around;
+    fle x-wrap: wrap;
+    align- content: center;
+    align- items: center;
+}
+    
+    .main-footer .container .footer-contacts {
+        align-items: center;
+        align-content: center;
+        marg in: 0 auto;
+        margin-left: 30%;
+        margin-bottom: 30px;
+    }
+    
+    .main-footer .container .footer-social {
+        margin -left: 10%;
+        align-items: flex-start;
+        align-content:flex-start;
+    }
+}
+    
+    @media (max-width: 510.98px) {
+        .about-us {
+        margin-bottom: 120px;
+        }
+    }
+    
+    @media (min-width: 767.99px) and (max-width: 860px) {
+        .category-items {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .category-items a {
+            margin-left: 60%;
+            margin-bottom: 50px;
+            
+        }
+    }
+    
+div {
+    font-family: 'circe';
+    color: white;
+}
+    
+</style>
+  </head>
+<body id="page-top">
+<header id="header" role="banner">
+ <nav class="navbar d-block navbar-expand-sm navbar-dark fixed-top" id="navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   <a class="navbar-brand js-scroll-trigger"></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav nav-list nav-primary"></ul>
+    <ul class="navbar-nav nav-list nav-primary">
+        <li class="nav-item">
+          <a href="https://denistiaglin.com/login" title="Вход в личный кабинет" class="nav-link js-scroll-trigger"><img src="images/ikonka_lichny_kabinet-black.png" />&nbsp;Личный&nbsp;кабинет</a>
+        </li>
+                            <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="about.html"><img src="images/ikonka_1-black.png" />&nbsp;Больше&nbsp;об&nbsp;авторе</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="https://energy.denistiaglin.com/"><img src="images/ikonka_2-black.png" />&nbsp;Ветер&nbsp;все&nbsp;изменит</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="logistic.html"><img src="images/ikonka_3-black.png" />&nbsp;Логистика&nbsp;в&nbsp;массы</a>
+      </li>
+          </ul>
+  </div>
+  <div class="navbar d-none d-sm-block ml-auto">
+ <ul class="navbar-nav nav-list">
+   <li class="nav-item ml-auto">
+        <a href="https://denistiaglin.com/login" title="Вход в личный кабинет" class="nav-link js-scroll-trigger">Личный&nbsp;кабинет&nbsp;<img src="images/ikonka_lichny_kabinet.png" /></a>
+      </li>
+     <li class="nav-item offset-1">
+     </li>
+ </ul>
+ </div>
+ </nav>
+</header>
+
+  
+<div class="container-fluid justify-content-center align-items-center" id="main">
+  
+   <div class="col-10 offset-1 about-us col-md-4 offset-md-1 order-first order-md-none">
+       <div class="about-us-left">
+        <h3>Приветствуем!</h3>
+        <p>Вы находитесь на главной странице сайта,
+        посвященного авторским разработкам
+        новосибирского изобретателя Дениса Тяглина.
+        Мы здесь верим в науку, инновации и
+        светлое будущее.<br> Добро пожаловать!</p>            <br>
+           <a class="button button-about" href="about.html">Подробнее об авторе</a>
+        </div>
+
+        <div class="about-us-right">
+            <img src="images/header-about-photo.png" width="270">
+        </div>
+    </div>
+    
+<!--
+    <div class="row">
+    </div>
+-->
+</div>
+<!--
+      <div class="px-2 pt-2 pt-md-0 d-flex col-10 offset-1 col-md-5 offset-md-1 col-lg-4 offset-lg-2">
+          <div class="d-flex ml-auto mt-auto"><h1>Новые&nbsp;&nbsp;<br>идеи&nbsp;&nbsp;&nbsp;</h1></div>
+      </div>
+      <div class="px-2 pb-2 pb-md-0 d-flex col-10 offset-1 col-md-5 offset-md-1 col-lg-4 offset-lg-2 order-none order-md-last">
+          <div class="d-flex ml-auto"><h1>-&nbsp;новый<br>&nbsp;&nbsp;мир</h1>
+          </div>
+      </div>
+-->
+<!--      <div class="w-100 d-block d-md-none"></div>-->
+<!--<div class="header-about">-->
+      
+<!--
+    <div class="header-about-photo">
+        <img src="images/header-about-photo.png" width="200">
+    </div>
+</div>
+-->
+<main>
+
+<div class="category-items">
+        
+        <div class="item -wind" >
+               <a class="item-wind" href="https://energy.denistiaglin.com">
+               Ветер все изменит</a>
+        </div>
+        <div class="item -logistic" >
+               <a class="item-logistic" href="https://denistiaglin.com/logistic">
+               Логистика в массы</a>
+        </div>
+</div>
+<!--    <div class="col-10 offset-1 col-md-4 offset-md-1">-->
+        
+        
+<!--
+        <div class="p-2 col-4">
+            <div class="row">
+                <div class="col-12"><a href="about.html"><i class="icon-about-author"></i></a></div>
+                <div class="col-12 text-center">
+                    <div class="d-block vertical-center">больше об&nbsp;авторе</div></div>
+            </div>
+        </div>
+-->
+<!--
+        <div class="item-wind" >
+                <div class="col-12"><a href="https://energy.denistiaglin.com"><i class="icon-frontpage2"></i></a></div>
+                <div class="col-12 text-center">
+                    <div class="d-block vertical-center">ветер&nbsp;все изменит</div></div>
+            
+        </div>
+        <div class="item-logistic">
+                <div class="col-12"><a href="logistic.html"><i class="icon-frontpage3"></i></a></div>
+                <div class="col-12 text-center">
+                    <div class="d-block vertical-center">логистика в&nbsp;массы</div></div>
+        </div>
+-->
+
+        
+<!--    </div>-->
+</main> 
+
+<footer class="main-footer">
+           <div class="container">
+            <p class="footer-contacts">
+                Россия, г.Новосибирск, 630099<br> ул. Депутатская 1, каб.205<br>
+                <a href="tel:79232279708">+7(923)227-97-08</a><br>(WhatsApp, Telegram)<br><br>
+                <a href="mailto:W79232279708@gmail.com">w79232279708@gmail.com</a>
+            </p>
+            <div class="footer-social">
+                <b>Давайте дружить!</b>
+                <ul>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">ВКОНТАКТЕ</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 26.14 14.91"><path d="M26 13.47l-.09-.17a13.55 13.55 0 0 0-2.6-3q-.87-.83-1.1-1.12A1 1 0 0 1 22 8a10.27 10.27 0 0 1 1.22-1.78l.88-1.16q2.35-3.13 2-4L26 .94a.8.8 0 0 0-.4-.22 2.14 2.14 0 0 0-.87 0h-3.92a.51.51 0 0 0-.27 0h-.3a.6.6 0 0 0-.15.14.93.93 0 0 0-.14.24 22.22 22.22 0 0 1-1.46 3.06q-.5.84-.93 1.46a7 7 0 0 1-.71.91 4.94 4.94 0 0 1-.52.47q-.23.18-.35.15l-.23-.05a.9.9 0 0 1-.31-.33 1.49 1.49 0 0 1-.16-.53V1.6a3.14 3.14 0 0 0 0-.62 2.12 2.12 0 0 0-.14-.44.73.73 0 0 0-.28-.33 1.57 1.57 0 0 0-.46-.18A9 9 0 0 0 12.57 0a8.93 8.93 0 0 0-3.25.33 1.83 1.83 0 0 0-.52.41q-.25.3-.07.33a1.67 1.67 0 0 1 1.16.59l.08.16a2.6 2.6 0 0 1 .19.63 6.32 6.32 0 0 1 .12 1 10.59 10.59 0 0 1 0 1.7q-.07.71-.13 1.1a2.21 2.21 0 0 1-.18.64 2.69 2.69 0 0 1-.16.3l-.07.07a1 1 0 0 1-.37.07.86.86 0 0 1-.46-.19 3.27 3.27 0 0 1-.56-.52 7 7 0 0 1-.66-.93q-.37-.6-.76-1.42l-.22-.39q-.2-.38-.56-1.11t-.62-1.43A.9.9 0 0 0 5.2.9h-.07a.93.93 0 0 0-.22-.16A1.44 1.44 0 0 0 4.6.65L.87.68A1 1 0 0 0 .1.94L0 1a.44.44 0 0 0 0 .22 1.08 1.08 0 0 0 .08.37Q.9 3.53 1.86 5.31t1.66 2.87Q4.23 9.27 5 10.24t1 1.24l.37.41.34.33a8.06 8.06 0 0 0 1 .78 16.34 16.34 0 0 0 1.4.9 7.6 7.6 0 0 0 1.79.72 6.19 6.19 0 0 0 2 .22h1.57a1.08 1.08 0 0 0 .72-.3l.05-.07a.9.9 0 0 0 .1-.25 1.38 1.38 0 0 0 0-.37 4.48 4.48 0 0 1 .09-1.05 2.77 2.77 0 0 1 .23-.71 1.74 1.74 0 0 1 .29-.4 1.19 1.19 0 0 1 .23-.2h.11a.86.86 0 0 1 .77.21 4.52 4.52 0 0 1 .83.79q.39.47.93 1.05a6.41 6.41 0 0 0 1 .87l.27.16a3.31 3.31 0 0 0 .71.3 1.53 1.53 0 0 0 .76.07l3.48-.05a1.58 1.58 0 0 0 .8-.17.68.68 0 0 0 .34-.37 1.06 1.06 0 0 0 0-.46 1.71 1.71 0 0 0-.1-.36z" fill="#fff"/></svg>
+                    </a></li>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">ФЕЙСБУК</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
+                    </a></li>
+                    <li><a class="social-button" href="https://www.instagram.com/denistiaglin.com_/"><span class="visually-hidden">ИНСТАГРАМ</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
+                    </a></li>
+                </ul>
+            </div>
+<!--
+            <p class="footer-copyright">
+                <b>РАЗРАБОТАНО:</b>
+                <a class="button" href="https://htmlacademy.ru">HTML ACADEMY</a>
+            </p>
+-->
+           </div>
+        </footer>   
+
+<img src="img/background.png" class="d-none d-md-block bg" id="bg" alt="">
+    <img src="img/fon-small.jpg" class="d-block d-md-none bg" alt="">
+<!-- Bootstrap dependencies -->
+<script src="static/js/jquery/3.1.1/jquery.min.js"></script>
+<script src="static/js/tether/1.3.7/tether.min.js"></script>
+<script src="static/js/popper.js/1.12.3/popper.min.js"></script>
+<script src="static/js/bootstrap/4.0.0-alpha.6/bootstrap.min.js"></script>
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+<script src="js/lightgallery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#lightgallery').lightGallery({
+    thumbnail: false
+  });
+});
+</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121326553-2"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter51100355 = new Ya.Metrika2({ id:51100355, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/51100355" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-121326553-2');
+</script>
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/plugins.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('#gallery-container').sGallery({
+        fullScreenEnabled: true
+      });
+    });
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121326553-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121326553-1');
+</script>
+
+
+
+
+<script>
+var GoogleAnalytics = {};
+
+GoogleAnalytics.tid = "";
+GoogleAnalytics.dimension = "dimension1";
+GoogleAnalytics.sendEvent = {};
+GoogleAnalytics.api = function(data){
+  var dimensionInfo = {};
+  ga("send", 'event', data[0], data[1], data[2], 'dimensionInfo');
+};
+
+GoogleAnalytics.trackEvent = function(category, action, label){
+  GoogleAnalytics.api([category, action, label]);
+};
+
+GoogleAnalytics.init = function(tid){
+  (function(i, s, o, g, r, a, m){
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function(){
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  ga('create', tid, 'auto');
+  ga('set', 'checkProtocolTask', null);
+};
+</script>
+</body>
+</html>

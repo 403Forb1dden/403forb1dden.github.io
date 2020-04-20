@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form name="Name">
+     Name <br>
+    <input type="text" name="Name"/> <br>
+    Email <br>
+    <input type="email" name="Email"/><br><br>
+    Sex<br>
+    <input type="radio" name="sex"> Male
+    <input type="radio" name="sex"> Female
+    <br><br>Current status<br>
+    <input type="checkbox" name="status"> Student<br>
+    <input type="checkbox" name="status"> Employed<br>
+    <input type="checkbox" name="status"> Unemployed<br><br>
+    Month And Year of Birth<br>
+    <select name="month">
+        <option value="January">January</option>
+    </select>
+    <select name="year">
+        <option value="1984">1984</option>
+    </select><br><br>
+    Skills and Technologies<br>
+    <select name="skills" size="10" multiple="multiple">
+        <optgroup label="Tech Skills">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="git">git</option>
+        </optgroup>
+        <optgroup label="Soft Skills">
+            <option value="Time management">Time management</option>
+            <option value="Proactivity">Proactivity</option>
+            <option value="Teamwork">Teamwork</option>
+            <option value="Leadership">Leadership</option>
+        </optgroup>
+    </select>
+    <br><br>Photo<br>
+    <input type="file" name="Choose file" value="Choose file">
+    <br><br>Comments<br>
+    <textarea rows="4" cols="20"></textarea><br><br>
+    <input type="submit" name="Save" value="Save">
+</form>
+</body>
+</html>
