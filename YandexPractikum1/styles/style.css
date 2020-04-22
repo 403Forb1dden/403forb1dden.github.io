@@ -1,0 +1,238 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  outline: 1px solid red;
+  box-sizing: inherit;
+  }
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+.header {
+  position: relative;
+  /*height: 100%;*/
+  min-height: 600px;
+
+  /*Размер для разработки, уточнить каким образом будет уменьшена высота хедера при меньшем разрешении (медиазапрос и т.п.)*/
+  height: 756px;
+  max-height: 756px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+  /*padding-top: 30px;*/
+  /*padding-left: 64px;*/
+  /* выше установили ограничения для секции */
+}
+.logo_place_header {
+  /*background-image: url('../images/logo_place_header.svg');*/
+  position: absolute;
+  display: block;
+  width: 183px;
+  height: 32px;
+  z-index: 100;
+  top: 30px;
+  left: 64px;
+
+  /*margin-top: 30px;*/
+  /*margin-left: 64px;*/
+}
+/*.header_images {*/
+/*  background-size: cover;*/
+/*  background-image: url('../images/header-image.png');*/
+/*  width: 765px;*/
+/*  height: 608px;*/
+/*  display: block;*/
+/*  Position: absolute; bottom: 0; right: 0*/
+/*  }*/
+
+.header__title {
+  width: 730px;
+  position: relative;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  margin-left: 64px;
+  z-index: 99;
+  /*padding-top: 150px;*/
+  /*padding-bottom: 150px;*/
+  /*margin-top: 180px;*/
+  /*margin-bottom: 180px;*/
+/*flex-direction: column;*/
+/*align-items: center;*/
+/*margin-left: 64px;*/
+}
+
+.header__subtitle {
+  position: absolute;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  /*margin-top: 100px;*/
+  left: 64px;
+  bottom: 30px;
+  z-index: 100;
+}
+
+.header__main-illustration {
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  /*left: 770px;*/
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  /*top: 20px;*/
+}
+
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  background-color:#2f80ed;
+  position: absolute;
+  z-index: 1;
+  /*margin-top:64px;*/
+  height: 568px;
+  width: 568px;
+  float: right;
+  /*align-items: right;*/
+  top: 64px;
+  right: 0;
+  /*bottom: 0;*/
+}
+
+.two-columns {
+  margin: 0 auto 100px auto;
+  /*margin-bottom: 100px;*/
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  /*align-self: center;*/
+  /*align-content: center;*/
+  /*align-items: center;*/
+  /*flex-direction: row;*/
+  /*align-items: center;*/
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  margin: 0;
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-style: normal;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  min-width: 784px;
+  width: 80%;
+}
+.two-columns__paragraph{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.two-columns__space-accent {
+  font-weight: bold;
+}
+
+.digits__section-title {
+  width: 60%;
+  padding: 0;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.digits__section-subtitle {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.digits__table {
+  list-style: none;
+  margin: 0 auto 40px auto;
+  padding: 60px 0 0 0;
+  width: 1100px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.table__cell {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  margin-bottom: 60px;
+}
+
+.table__cell:nth-child(2) {
+  /*margin-bottom: 60px;*/
+}
+
+.table__heading {
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.table__annotation {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
