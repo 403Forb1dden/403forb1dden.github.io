@@ -1,0 +1,14 @@
+
+.header__ru-language_active {
+    position: relative;
+}
+
+.header__ru-language_active::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 1.3px;
+    background-color: white;
+    top: 23px;
+    left: 0;
+}

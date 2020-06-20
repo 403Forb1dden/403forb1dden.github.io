@@ -1,0 +1,18 @@
+
+@import "__title/comments__title.css";
+@import "__subtitle/comments__subtitle.css";
+@import "__list/comments__list.css";
+@import "__item/comments__item.css";
+@import "__avatar/comments__avatar.css";
+@import "__description/comments__description.css";
+@import "__author/comments__author.css";
+
+.comments {
+    margin-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+    .comments {
+        margin-bottom: 102px;
+    }
+}

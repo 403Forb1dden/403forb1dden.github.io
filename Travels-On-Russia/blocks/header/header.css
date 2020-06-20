@@ -1,0 +1,21 @@
+@import "__logo/header__logo.css";
+@import "__logo-link/header__logo-link.css";
+@import "__ru-language/header__ru-language.css";
+@import "__en-language/header__en-language.css";
+@import "__ru-language/_active/header__ru-language_active.css";
+@import "__site-language/header__site-language.css";
+
+.header {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+    .header {
+        margin-top: 30px;
+    }
+}

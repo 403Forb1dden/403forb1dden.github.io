@@ -1,0 +1,22 @@
+
+.comments__subtitle {
+    margin: 0 0 38px 0;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .comments__subtitle {
+        margin-bottom: 62px;
+        font-size: 24px;
+        line-height: 35px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .comments__subtitle {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}

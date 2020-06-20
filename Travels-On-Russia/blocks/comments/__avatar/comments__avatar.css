@@ -1,0 +1,11 @@
+
+.comments__avatar {
+    display: block;
+    margin: 0 auto 17px auto;
+}
+
+@media (min-width: 1024px) {
+    .comments__avatar {
+        margin: 0 0 40px 0;
+    }
+}

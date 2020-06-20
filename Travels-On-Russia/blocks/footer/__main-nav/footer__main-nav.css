@@ -1,0 +1,23 @@
+
+.footer__main-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .footer__main-nav {
+        flex-direction: row;
+        margin-bottom: 0;
+        width: 464px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .footer__main-nav {
+        width: 666px;
+    }
+}

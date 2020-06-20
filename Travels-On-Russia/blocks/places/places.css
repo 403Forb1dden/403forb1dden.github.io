@@ -1,0 +1,41 @@
+@import "__list/places__list.css";
+@import "__item/places__item.css";
+@import "__title/places__title.css";
+@import "__title/_padding_right/places__title_padding_right.css";
+@import "__source/places__source.css";
+@import "__source-title/places__source-title.css";
+@import "__source-link/places__source-link.css";
+@import "__image/places__image.css";
+@import "__description/places__description.css";
+@import "__description-wrapper/places__description-wrapper.css";
+
+
+.places {
+    padding: 0;
+    margin-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+    .places {
+        padding: 0 24px 0 24px;
+        margin-bottom: 102px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .places {
+        padding: 0 48px 0 48px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .places {
+        padding: 0 148px 0 148px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .places {
+        padding: 0 228px 0 228px;
+    }
+}

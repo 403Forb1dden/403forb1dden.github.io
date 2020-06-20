@@ -1,0 +1,19 @@
+
+@import "__title/video__title.css";
+@import "__subtitle/video__subtitle.css";
+@import "__link/video__link.css";
+@import "__link-wrapper/video__link-wrapper.css";
+@import "__duration/video__duration.css";
+@import "__name/video__name.css";
+@import "__director/video__director.css";
+@import "__image/video__image.css";
+
+.video {
+    margin-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+    .video {
+        margin-bottom: 102px;
+    }
+}

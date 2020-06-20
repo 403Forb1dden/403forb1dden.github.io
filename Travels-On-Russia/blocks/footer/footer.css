@@ -1,0 +1,24 @@
+
+@import "__main-nav/footer__main-nav.css";
+@import "__nav-link/footer__nav-link.css";
+@import "__copyright/footer__copyright.css";
+
+.footer {
+    padding-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        padding-bottom: 40px;
+    }
+}

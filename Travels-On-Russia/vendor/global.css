@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 169.43%;
+    font-weight: normal;
+    color: #ffffff;
+    font-style: normal;
+    background-color: #2A2C2F;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media (min-width: 375px) {
+    .container {
+        width: 375px;
+        margin: 0 auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 1024px;
+        margin: 0 auto;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        width: 1280px;
+        margin: 0 auto;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 1440px;
+        margin: 0 auto;
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

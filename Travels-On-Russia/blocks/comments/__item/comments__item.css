@@ -1,0 +1,23 @@
+
+.comments__item:not(:last-child) {
+    margin-bottom: 48px;
+}
+
+@media (min-width: 1024px) {
+    .comments__item {
+        width: 296px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .comments__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .comments__item {
+        width: 382px;
+    }
+}

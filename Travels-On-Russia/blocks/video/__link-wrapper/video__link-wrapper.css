@@ -1,0 +1,7 @@
+
+@media (min-width: 768px) {
+    .video__link-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
