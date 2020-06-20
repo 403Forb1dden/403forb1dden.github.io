@@ -1,8 +1,4 @@
 
-@import "__main-nav/footer__main-nav.css";
-@import "__nav-link/footer__nav-link.css";
-@import "__copyright/footer__copyright.css";
-
 .footer {
     padding-bottom: 24px;
 }
